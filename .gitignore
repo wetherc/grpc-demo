@@ -1,0 +1,17 @@
+# Ignore everything
+*
+
+# But descend into directories
+!*/
+
+# And whitelist certain filetypes
+!*.py
+!*.proto
+!*.md
+!*.txt
+
+# And certain dotfiles
+!.gitignore
+
+# But still ignore some generated folders
+__pycache__

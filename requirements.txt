@@ -1,0 +1,6 @@
+onnxruntime=1.7.0
+grpcio=1.37.0
+grpcio-tools=1.37.0
+scikit-learn=0.24.1
+numpy=1.19.5
+skl2onnx=1.8.0

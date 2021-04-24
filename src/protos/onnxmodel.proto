@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.mlcore.examples.onnxmodel";
+option java_outer_classname = "OnnxModelProto";
+option objc_class_prefix = "ONNX";
+
+package onnxmodel;
+
+// The inference service definition
+service Inferencer {
+  // serves an inference
+  rpc MakeInference (InferenceRequest) returns (Prediction) {}
+}
+
+// The request message
+message InferenceRequest {
+  float sepal_length = 1;
+  float sepal_width = 2;
+  float petal_length = 3;
+  float petal_width = 4;
+}
+
+message Prediction {
+  float pred_prob = 1;
+}
